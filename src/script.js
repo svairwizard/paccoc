@@ -1,6 +1,6 @@
 const head = document.createElement('div');
 head.innerHTML = `
-    <header class="p-3 bg-dark text-white">
+    <header>
         <a href="index.html"> home </a>
         <a href="bando.html"> bando </a>
         <a href="answers.html"> answrs </a>

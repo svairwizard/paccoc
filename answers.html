@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>answrs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="src/script.js" defer></script>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <style>
@@ -22,7 +23,7 @@
             margin-right: 10%;
         }
 
-        h1, h2, h3, p, a, li {
+        h1, h2, h3, p, a, li, td, th {
             color: inherit;
         }
 
@@ -41,74 +42,88 @@
             padding: 0 15px;
         }
         }
+
+        a:hover {
+            color: #00ff00;
+        }
+
+        .art {
+            margin: 7px;
+            color: black;
+            background: #00ff00
+        }
     </style>
 </head>
 
 <body>
-    <div class="cent">
-        <button onclick="downloadFiles()" type="button" class="btn">
-            download answrs
-        </button>
+    <div class="container">
+        <div class="cent">
+            <button onclick="downloadFiles()" type="button" class="art mt-5">
+                download answrs
+            </button>
+        </div> 
         <a id="materials" href="materials-1-sem.zip" download style="display:none;"></a>
+
+        <table class="mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Предмет</th>
+                    <th scope="col">Задания</th>
+                    <th scope="col">Ответы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Мат. Анализ</td>
+                    <td>
+                        <p>Коллоквиум</p>
+                        <p>Вопросы к экзамену</p>
+                        <a href="https://dodem.ru" target="_blank">Нормальный антиДемидович</a>
+                    </td>
+                    <td>Расписанные билеты экзамен</td>
+                </tr>
+                <tr>
+                    <td>Алгем</td>
+                    <td>Вопросы к экзамену</td>
+                    <td>Расписанные билеты экзамен</td>
+                </tr>
+                <tr>
+                    <td>Языки Програм-ния</td>
+                    <td>Летучки и ПЗ</td>
+                    <td>
+                        <p>Решенные летучки</p>
+                        <p>Ответы на Revenge</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ТПВИ</td>
+                    <td>
+                        <p>Задания</p>
+                        <p>Вопросы к зачету</p>
+                    </td>
+                    <td>
+                        <p>Готовые работы</p>
+                        <p>Ответы на Revenge</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>История</td>
+                    <td>Вопросы к зачету</td>
+                    <td>Некоторые доклады</td>
+                </tr>
+                <tr>
+                    <td>ОПК</td>
+                    <td>Вопросы к зачету</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>ОИБ</td>
+                    <td>Темы для докладов</td>
+                    <td>Некоторые доклады</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Предмет</th>
-                <th scope="col">Задания</th>
-                <th scope="col">Ответы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Мат. Анализ</td>
-                <td>
-                    <p>Коллоквиум</p>
-                    <p>Вопросы к экзамену</p>
-                    <a href="https://dodem.ru" target="_blank">Нормальный антиДемидович</a>
-                </td>
-                <td>Расписанные билеты экзамен</td>
-            </tr>
-            <tr>
-                <td>Алгем</td>
-                <td>Вопросы к экзамену</td>
-                <td>Расписанные билеты экзамен</td>
-            </tr>
-            <tr>
-                <td>Языки Програм-ния</td>
-                <td>Летучки и ПЗ</td>
-                <td>
-                    <p>Решенные летучки</p>
-                    <p>Ответы на Revenge</p>
-                </td>
-            </tr>
-            <tr>
-                <td>ТПВИ</td>
-                <td>
-                    <p>Задания</p>
-                    <p>Вопросы к зачету</p>
-                </td>
-                <td>
-                    <p>Готовые работы</p>
-                    <p>Ответы на Revenge</p>
-                </td>
-            </tr>
-            <tr>
-                <td>История</td>
-                <td>Вопросы к зачету</td>
-                <td>Некоторые доклады</td>
-            </tr>
-            <tr>
-                <td>ОПК</td>
-                <td>Вопросы к зачету</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>ОИБ</td>
-                <td>Темы для докладов</td>
-                <td>Некоторые доклады</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="mb-5"></div>
 </body>
 </html>
