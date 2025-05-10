@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Пейзаж</title>
+</head>
+
+<body>
+    <svg width="1600" height="1200">
+        <!-- Небо -->
+        <rect width="1600" height="1200" fill="#87CEEB" />
+
+        <!-- Солнце -->
+        <circle cx="1400" cy="200" r="100" fill="#FFD700" />
+
+        <!-- Лучи солнца -->
+        <line x1="1400" y1="50" x2="1400" y2="350" stroke="#FFD700" stroke-width="6" />
+        <line x1="1250" y1="200" x2="1550" y2="200" stroke="#FFD700" stroke-width="6" />
+        <line x1="1282" y1="82" x2="1518" y2="318" stroke="#FFD700" stroke-width="6" />
+        <line x1="1282" y1="318" x2="1518" y2="82" stroke="#FFD700" stroke-width="6" />
+
+        <line x1="1330" y1="130" x2="1470" y2="270" stroke="#FFD700" stroke-width="6" />
+        <line x1="1330" y1="270" x2="1470" y2="130" stroke="#FFD700" stroke-width="6" />
+        <line x1="1400" y1="100" x2="1400" y2="300" stroke="#FFD700" stroke-width="6" />
+        <line x1="1300" y1="200" x2="1500" y2="200" stroke="#FFD700" stroke-width="6" />
+
+        <!-- Земля -->
+        <path d="M0 600 Q 800 400 1600 800 L1600 1200 L0 1200 Z" fill="#90EE90" />
+
+        <!-- Дом -->
+        <!-- Первый этаж -->
+        <rect x="600" y="600" width="400" height="300" fill="#CD853F" />
+
+        <!-- Крыша дома -->
+        <path d="M500 600 L800 400 L1100 600 Z" fill="#FF0000" />
+
+        <!-- Труба -->
+        <rect x="900" y="440" width="60" height="100" fill="#8B4513" />
+
+        <!-- Дым из трубы -->
+        <path d="M920 420 Q 940 380 960 420 Q 980 380 1000 420" fill="none" stroke="#808080" stroke-width="6" />
+
+        <!-- Дверь -->
+        <rect x="700" y="700" width="80" height="200" fill="#8B4513" />
+
+        <!-- Окно -->
+        <rect x="840" y="700" width="100" height="100" fill="#87CEEB" />
+        <line x1="890" y1="700" x2="890" y2="800" stroke="white" stroke-width="4" />
+        <line x1="840" y1="750" x2="940" y2="750" stroke="white" stroke-width="4" />
+
+        <!-- Человечек -->
+        <!-- Голова -->
+        <circle cx="1200" cy="700" r="40" fill="#FFE4C4" />
+        <!-- Тело -->
+        <line x1="1200" y1="740" x2="1200" y2="900" stroke="black" stroke-width="6" />
+        <!-- Руки -->
+        <line x1="1200" y1="800" x2="1140" y2="840" stroke="black" stroke-width="6" />
+        <line x1="1200" y1="800" x2="1260" y2="840" stroke="black" stroke-width="6" />
+        <!-- Ноги -->
+        <line x1="1200" y1="900" x2="1160" y2="1000" stroke="black" stroke-width="6" />
+        <line x1="1200" y1="900" x2="1240" y2="1000" stroke="black" stroke-width="6" />
+    </svg>
+</body>
+
+</html>

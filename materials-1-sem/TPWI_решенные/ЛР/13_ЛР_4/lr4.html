@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <title>Form</title>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lr4.css">
+</head>
+
+<body>
+    <!-- Создание контейнера с формой -->
+    <div class="order_form">
+        <h1>Форма заказа</h1>
+        <form>
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <!-- Создание полей ввода фамилии, имени и возраста -->
+                <table>
+                    <tr>
+                        <td><label for="surename_id">Фамилия:</label></td>
+                        <td><input id="surename_id" type="text" name="surname"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="name_id">Имя:</label></td>
+                        <td><input id="name_id" type="text" name="name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="age_id">Возраст:</label></td>
+                        <td><input id="age_id" type="number" name="age" min="0"></td>
+                    </tr>
+
+                    <!-- Задание выбора пола -->
+                    <tr>
+                        <td>Пол:</td>
+                        <td>
+                            <label><input type="radio" name="gender" checked>Мужской</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <label><input type="radio" name="gender">Женский</label>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </fieldset>
+
+            <!-- Создание текстового поля для ввода комментариев -->
+            <textarea placeholder="Введите комментирий к заказу" name="comment"></textarea>
+
+            <label style="display: block;"><input type="checkbox" name="agree" id="agree"> Берите мои данные!</label>
+
+            <table name="laba">
+                <!-- Создание кнопок для отправки и отчистки полей формы -->
+                <tr>
+                    <td class="left"><button type="reset" class="buttonrs" name="resButton">ОчиститЬ</button></td>
+                    <td><button type="button" class="buttonrs" name="buttonSubmit" disabled
+                            onclick="sendForm();">Отправить!</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!-- Подключение .js файла в наш код -->
+    <script src="lr4.js"></script>
+</body>
+
+</html>

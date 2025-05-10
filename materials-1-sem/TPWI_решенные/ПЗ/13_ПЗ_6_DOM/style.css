@@ -1,0 +1,97 @@
+html {
+  background-color: #f654ae;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: 3px;
+  font-family: Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  margin: 50px auto 0 10px;
+}
+
+.autos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.autoCard {
+  background: #fff;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+button {
+  background: #1b1b1b;
+  color: #fff;
+  padding: 10px 30px;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: left;
+  color: #fff;
+  margin: 20px 10px 10px;
+  font-weight: bold;
+}
+
+.text {
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: calc(20px + 5vw);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #1da9cc;
+  filter: blur(0.007em);
+}
+
+.markers {
+	margin: 0 0 20px 24px;
+	padding: 0;
+	list-style-type: "⚡ ";
+
+}
+.markers li {
+	margin: 10px;
+	font-size: 20px;
+}
+
+ul {
+  margin: 10px;
+}
+
+li {
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .9;
+}
+
+li:nth-child(2) {
+  position: relative;
+  left: 70px;
+}
+li:nth-child(3) {
+  position: relative;
+  left: 135px;
+}
+
+.rotate {
+   transform: rotate(270deg);
+}
+
+.add-card-button {
+  margin: 20px 0 0 19.5px;
+}

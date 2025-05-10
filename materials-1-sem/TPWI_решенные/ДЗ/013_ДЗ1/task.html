@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <title>Кнопка</title>
+
+    <meta charset="utf-8">
+    <style>
+        span {
+            border: 1px solid rgb(200, 200, 200);
+            background-color: rgb(226, 226, 226);
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin: 5px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px
+        }
+
+        pre {
+            border: 10px solid rgb(226, 226, 226);
+            background-color: rgb(226, 226, 226);
+        }
+
+        .blacktop {
+            background-color: black;
+            color: white;
+        }
+
+        .autor {
+            float: right;
+            position: absolute;
+            margin-top: -100px;
+            margin-left: 1600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Как сделать кнопку в HTML</h1>
+        <p>27 января 2023</p>
+        <p>2 342</p>
+        <a href="">HTML</a>
+        <p class="autor">Автор <a href="">Анастасия Ткачева</a></p>
+
+
+        <figure>
+
+        </figure>
+
+        <table>
+            <td>Convert web pages and HTML files to PDF in your applications with the Pdfcrowd <a href="">HTML to PDF
+                    API</a></td>
+            <td class="blacktop">Printed with Pdfcrowd.com</td>
+        </table>
+    </div>
+
+    <div>
+        <p>Для создания кнопок используется тег<span>&lt;button&gt;</span>. Внутри него размещается текст или
+            изображение, которые будут отображаться на кнопке. Например:
+        </p>
+
+        <pre>&lt;button type="button"&gt;Я кнопка&lt;/button&gt;</pre>
+
+        <p>Чтобы задать кнопке имя, тип или состояние, нужно добавить атрибуты: <span>name</span> ,
+            <span>disabled</span> и <span>type</span>
+            .
+        </p>
+
+        <p>Атрибут <span>name</span> задаёт имя кнопки. Может использоваться для
+            идентификации элемента
+            в скриптах.</p>
+
+        <pre>&lt;button type="button" name="popup-button"&gt;Я кнопка&lt;/button&gt;</pre>
+
+        Атрибут <span>disabled</span> блокирует доступ к кнопке.
+
+        <pre>&lt;button type="button" disabled&gt;Я заблокированная кнопка&lt;/button&gt;</pre>
+
+        <p>Атрибут <span>type</span> определяет тип кнопки. Ему задают одно из трёх
+            значений:</p>
+
+        <p><span>button</span> — значение по умолчанию. Означает, что элемент — обычная
+            кнопка. Она
+            может добавлять товары в корзину или избранное, переключать слайдеры или
+            закрывать всплывающие окна.</p>
+
+        <p><span>submit</span> задаётся кнопкам для отправки формы. Когда пользователь
+            нажимает
+            на кнопку с таким типом, браузер отправляет данные формы на сервер.</p>
+
+        <p><span>reset</span> добавляется кнопкам сброса формы. Когда пользователь
+            нажимает на такую
+            кнопку, браузер возвращает значения всех полей формы к изначальным.
+            <a href="">Полный список атрибутов</a>
+        </p>
+
+        <pre><a href="">Что использовать: ссылки или кнопки</a></pre>
+
+        <p>Иногда на сайте встречаются элементы вроде кнопок «Перейти в каталог», «Читать
+            далее» или кнопок соцсетей. На самом деле это ссылки. Их создают с помощью
+            <span>&lt;a href=""&gt;Какой-то текст&lt;/a&gt;</span> и
+            затем
+            стилизуют так, чтобы они стали похожими
+            на кнопки.
+        </p>
+
+        <table>
+            <td>Convert web pages and HTML files to PDF in your applications with the
+                Pdfcrowd <a href="">HTML to PDF API</a></td>
+            <td class="blacktop">Printed with Pdfcrowd.com</td>
+        </table>
+    </div>
+
+    <div>
+        <h2>А как же input?</h2>
+
+        <p>Создать кнопку можно и с помощью тега <span>&lt;input&gt;</span> , если указать ему тип <span>button</span> :
+        </p>
+
+        <pre>&lt;input type="button" value="Я тоже кнопка"&gt;</pre>
+
+        <p>Это рабочий способ. О нём надо знать, ведь вы можете встретить его в проектах.
+            Но самим так делать не стоит. У кнопок, созданных на инпуте, есть ограничения:
+            сложно управлять размерами и положением изображений, а также нет
+            псевдоэлементов. Поэтому оставьте <span>&lt;input&gt;</span> для создания элементов формы, таких
+            как текстовые поля, радиокнопки или чекбоксы. А кнопки верстайте с помощью
+            <span>&lt;button&gt;</span> .
+        </p>
+
+        <h2>Как сделать кнопку с иконкой</h2>
+
+        <p>Посмотрим три способа создания кнопки с иконкой.</p>
+
+        <h3>С помощью тега &lt;img&gt;</h3>
+
+        <p>Способ подойдёт для контентных изображений.</p>
+
+        <pre>&lt;button type="button"&gt;<br>   &lt;img src="icon.svg" alt="Иконка" width="20" height="20"&gt;<br>&lt;/button&gt;</pre>
+
+        <figure>
+            <table style="padding:5px">
+                <tr>
+                    <td><button type="button">
+                            <img src="icon.svg" alt="Иконка" width="20" height="20">
+                        </button></td>
+                    <td><button type="button">
+                            <img src="icon.svg" alt="Иконка" width="20" height="20">
+                        </button></td>
+                    <td><button type="button">
+                            <img src="icon.svg" alt="Иконка" width="20" height="20">
+                        </button></td>
+                </tr>
+
+
+            </table>
+            <hr style="opacity: 0.4;">
+            <p style="opacity: 0.4;">Кнопки с контентным изображением</p>
+        </figure>
+
+        <p>Так вы можете добавлять кнопки с эмодзи, лайками, дизлайками или чем-то ещё.
+            Иконке нужно обязательно задавать размеры, чтобы кнопка зарезервировала место
+            и не прыгала, когда загрузится иконка.</p>
+
+        <h3>Добавить инлайн-SVG в разметку</h3>
+
+        <table>
+            <td>Convert web pages and HTML files to PDF in your applications with the
+                Pdfcrowd <a href="">HTML to PDF API</a></td>
+            <td class="blacktop">Printed with Pdfcrowd.com</td>
+        </table>
+    </div>
+
+    <div>
+        <p>Способ подойдёт, если изображение меняет состояния, как здесь:</p>
+
+        <button type="button">
+            <svg width="300" height="30">
+                <path d="..." />
+            </svg>
+            <p>&#9773 Сбросить изменения</p>
+        </button>
+
+        <p>Код простой: пишем тег <span>&lt;button&gt;</span> и добавляем в него код SVG-изображения.</p>
+
+        <pre>&lt;button type="button"&gt;<br>   &lt;svg width="30" height="30"&gt;<br>      &lt;path d="..." /&gt;<br>   &lt;/svg&gt;<br>   Просто кнопка<br>&lt;/button&gt;</pre>
+
+        <h3>Вставить фоном в CSS</h3>
+
+        <p>Способ подойдёт, если иконка играет декоративную роль и не меняется при
+            наведении или клике на кнопку. Например, в таких случаях:</p>
+
+        <button type="button">
+            <svg width="300" height="30">
+                <path d="..." />
+            </svg>
+            <p>&#9773 Добавить в корзину</p>
+        </button>
+
+        <p>Как добавить иконку в кнопку:</p>
+
+        <table>
+            <td>Convert web pages and HTML files to PDF in your applications with the
+                Pdfcrowd <a href="">HTML to PDF API</a></td>
+            <td class="blacktop">Printed with Pdfcrowd.com</td>
+        </table>
+
+        <pre>&lt;button type="button"&gt;<br>   &lt;span class="icon-button"&gt;&lt;/span&gt;<br>   Текст кнопки<br>&lt;/button&gt;</pre>
+
+        <pre>.icon-button {
+    background-image: url("../images/icon.svg");
+    background-size: 90px 97px;
+    }</pre>
+
+        <p>Какой способ выбрать — зависит от ваших задач и особенностей проекта. Вы также
+            можете использовать разные методы в рамках одного проекта. Например, часть кнопок
+            сделать со встроенным в разметку SVG, а часть — с фоновым изображением.</p>
+
+        <h2>Материалы по теме</h2>
+
+        <p>— <a href="">Что такое ссылки — и как их ставить</a></p>
+        <p>— <a href="">Как сделать картинку ссылкой</a></p>
+        <p>— <a href="">Шаблон HTML-формы</a></p>
+        <p>— <a href="">Как использовать ссылки mailto: и tel:</a></p>
+
+        <table>
+            <td>Convert web pages and HTML files to PDF in your applications with the
+                Pdfcrowd <a href="">HTML to PDF API</a></td>
+            <td class="blacktop">Printed with Pdfcrowd.com</td>
+        </table>
+    </div>
+</body>
+
+</html>

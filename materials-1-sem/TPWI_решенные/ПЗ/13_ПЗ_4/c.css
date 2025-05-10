@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+body{
+    padding: 10px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+}
+
+p{
+    display: block;
+    padding: 10px;
+    max-width: 60%;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+p#vowels{
+    background-color: #FFDB83;
+}
+
+p#result{
+    background-color: #EBF9DF;
+}
+
+button[onclick]{
+    padding: 3px;
+    margin: 10px 25px 35px 0;
+    cursor: pointer;
+}
+
+p#vowels b{
+    font-weight: bold;
+    background-color: #FC6F71;
+    padding: 0 5px;
+}
+
+input{
+    display: block;
+    margin-bottom: 15px;
+    width: 500px;
+}

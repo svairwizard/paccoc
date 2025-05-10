@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Tahoma;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+td {
+    border: 1px solid black;
+}
