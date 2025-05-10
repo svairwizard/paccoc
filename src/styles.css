@@ -1,0 +1,42 @@
+body {
+    width: 96%;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Consolas', 'Lucida Console', monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+h1, h2, h3, p, a, li, td, th {
+    color: inherit;
+}
+
+.cent {
+    text-align: center;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 2000px) {
+.container {
+    width: 100%;
+    padding: 0 15px;
+}
+}
+
+a:hover {
+    color: #00ff00;
+}
+.art {
+    margin: 7px;
+    color: black;
+    background: #00ff00
+}
